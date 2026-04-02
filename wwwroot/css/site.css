@@ -5,6 +5,10 @@ body {
     padding-top: 70px; /* for fixed navbar */
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* WHITE OVERLAY LOADER */
 .loader {
     position: fixed;
@@ -176,27 +180,56 @@ color: #ffffff !important;
    HERO ENHANCEMENT
 ========================= */
 .hero {
-    margin-top: -70px;
-    height: 100vh;
-    background: linear-gradient(90deg, #000066, #1affff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    margin-top: -70px !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(90deg, #000066, #1affff) !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
 }
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(26,255,255,0.2);
-    top: 20%;
-    left: 60%;
-    border-radius: 50%;
-    filter: blur(80px);
-}
+
+    .hero .container-fluid {
+        padding: 0 20px !important;
+        max-width: 1200px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Keep your existing pseudo-elements */
+    .hero::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: rgba(26,255,255,0.2);
+        top: 20%;
+        left: 60%;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 1;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.05);
+        z-index: 1;
+    }
+
+    .hero .container {
+        position: relative;
+        z-index: 2 !important;
+    }
+
 
 .hero .row h5 {
     font-size: 1.5rem;
@@ -210,13 +243,6 @@ color: #ffffff !important;
 .hero h3,
 .hero p {
     color: #ffffff !important;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.05);
 }
 .hero-subtitle {
     font-size: 18px;
@@ -684,8 +710,8 @@ html {
 }
 
 footer {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    margin-left: 0;
     background: #000000;
     color: #9CA3AF;
 }
