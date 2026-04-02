@@ -1,0 +1,588 @@
+﻿@model ContactModel
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container text-center text-white">
+        <h1 class="display-4 fw-bold">My name is Kowsalya.</h1>
+
+        <h3 class="mt-3">
+            <span id="typing"></span>
+        </h3>
+
+        <p class="mt-3 hero-subtitle">
+            Building scalable enterprise applications using ASP.NET Core, SQL Server & Kendo UI.
+        </p>
+
+        <p class="hero-skills">
+            ASP.NET Core | SQL Server | Kendo UI | REST APIs | MVC Architecture
+        </p>
+
+        <div class="row text-center mt-5 pt-5">
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold mb-1">Design For</h5>
+                <p>Web & Mobile</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold mb-1">Phone</h5>
+                <p>+91 (97) 860-86752</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold mb-1">Drop your Message</h5>
+                <p>kowsisyam@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 about-section">
+    <div class="container">
+
+        <div class="row align-items-center g-3 about-row">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-md-7 about-left">
+
+                <h2 class="fw-bold mb-3">About Me</h2>
+
+                <p class="about-intro">
+                    I am a <strong>Full Stack .NET Developer</strong> with 3+ years of experience building scalable enterprise applications using ASP.NET Core.
+                </p>
+
+                <ul class="about-list mt-3">
+                    <li>ASP.NET Core Web API & MVC</li>
+                    <li>SQL Server & Entity Framework</li>
+                    <li>Secure API Development (JWT, mTLS)</li>
+                    <li>Healthcare Integrations (FHIR)</li>
+                </ul>
+
+                <div class="about-highlight mt-4">
+                    <p class="mb-2">
+                        Currently working at <strong>MRK Infotech</strong> as a <strong>Team Leader</strong>.
+                    </p>
+
+                    <ul class="exp-points">
+                        <li>Leading a team of developers and managing project delivery</li>
+                        <li>Designing scalable backend architecture using ASP.NET Core</li>
+                    </ul>
+                </div>
+
+                <p class="about-cta mt-4">
+                    📩 Open to opportunities & collaborations
+                </p>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-md-5 about-right">
+                <img src="~/images/profile.png" class="about-img" alt="profile">
+            </div>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="row text-center mt-5">
+
+            <div class="col-md-4 mb-3">
+                <div class="about-stat">
+                    <h3>3+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="about-stat">
+                    <h3>10+</h3>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="about-stat">
+                    <h3>5+</h3>
+                    <p>Technologies</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- SKILLS -->
+@* <section id="skills" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Skills</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-3"><div class="card p-3">ASP.NET Core</div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3">Web API</div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3">SQL Server</div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3">JWT Auth</div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3">FHIR API</div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3">Azure</div></div>
+        </div>
+    </div>
+</section>
+ *@
+
+<section id="skills" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Technical Expertise</h2>
+
+        <div class="row">
+
+            <!-- Backend -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <h5 class="skill-title">
+                        <i class="bi bi-server me-2"></i> Backend Development
+                    </h5>
+
+                    <div class="skill-item">
+                        <i class="devicon-csharp-plain colored"></i>
+                        <span>C#</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-dotnetcore-plain colored"></i>
+                        <span>ASP.NET Core</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-dotnet-plain colored"></i>
+                        <span>ASP.NET MVC</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-dotnet-plain colored"></i>
+                        <span>Web API</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-dotnet-plain colored"></i>
+                        <span>JWT Auth</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-dotnet-plain colored"></i>
+                        <span>FHIR API</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        <span>SQL Server</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-entityframeworkcore-plain colored"></i>
+                        <span>Entity Framework</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <h5 class="skill-title">
+                        <i class="bi bi-code-slash me-2"></i> Frontend Development
+                    </h5>
+
+                    <div class="skill-item">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <span>Bootstrap</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-jquery-plain colored"></i>
+                        <span>jQuery</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-jquery-plain colored"></i>
+                        <span>Ajax</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <h5 class="skill-title">
+                        <i class="bi bi-tools me-2"></i> Tools & UI
+                    </h5>
+
+                    <div class="skill-item">
+                        <i class="devicon-visualstudio-plain colored"></i>
+                        <span>Visual Studio</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-windows8-original colored"></i>
+                        <span>IIS</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        <span>SSMS</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="devicon-kubernetes-plain colored"></i>
+                        <span>Kendo UI</span>
+                    </div>
+
+                    <!-- ADD THIS 🔥 -->
+                    <div class="skill-item">
+                        <i class="devicon-azure-plain colored"></i>
+                        <span>Azure App Services</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5 experience-section">
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <h3 class="section-title">Experience</h3>
+            <p class="section-description">
+                My professional journey building enterprise and healthcare applications
+            </p>
+        </div>
+
+        <div class="row">
+
+            <!-- ITEM 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="exp-box">
+                    <div class="exp-icon">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+
+                    <h4 class="exp-title">MRK Infotech</h4>
+                    <p class="exp-role">Team Leader | Full Stack .NET Developer</p>
+
+                    <ul class="exp-list">
+                        <li>Leading a team of developers</li>
+                        <li>Managing project delivery</li>
+                        <li>Designing scalable backend architecture</li>
+                    </ul>
+
+                    <span class="exp-year">2026 – Present</span>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="exp-box">
+                    <div class="exp-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+
+                    <h4 class="exp-title">KST Infotech</h4>
+                    <p class="exp-role">Full Stack .NET Developer</p>
+
+                    <ul class="exp-list">
+                        <li>Developed Web APIs & MVC apps</li>
+                        <li>Worked with SQL Server & EF</li>
+                        <li>Integrated enterprise modules</li>
+                    </ul>
+
+                    <span class="exp-year">2024 – 2026</span>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="exp-box">
+                    <div class="exp-icon">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+
+                    <h4 class="exp-title">Human Cloud Soft</h4>
+                    <p class="exp-role">Junior / Full Stack Developer</p>
+
+                    <ul class="exp-list">
+                        <li>Worked on frontend & backend</li>
+                        <li>Built UI using HTML, CSS, JS</li>
+                        <li>Handled database operations</li>
+                    </ul>
+
+                    <span class="exp-year">2023 – 2024</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <p><strong>My Work</strong></p>
+            <h2 class="text-center fw-bold">Featured Projects</h2>
+            <p class="text-muted">Enterprise and product applications across healthcare, publishing, retail and service domains.</p>
+        </div>
+    </div>
+
+    <div class="proj-slider-outer">
+        <div class="proj-slider-track" id="projTrack">
+
+            <div class="pcard" style="--ac:#4f46e5;--glow:rgba(79,70,229,0.08);--shadow:rgba(79,70,229,0.18);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">01</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> MRK Infotech · Current</div>
+                <div class="pcard-icon">📖</div>
+                <h5 class="pcard-title">C&amp;M Digitals — Journal Publishing</h5>
+                <p class="pcard-desc">End-to-end web platform for a journal publishing company. Full backend architecture, career page, contact page integration, UI revamp and mobile responsive tested via Chrome DevTools.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">ASP.NET MVC</span>
+                    <span class="pcard-tag">Kendo UI</span>
+                    <span class="pcard-tag">SQL Server</span>
+                    <span class="pcard-tag">Backend</span>
+                    <span class="pcard-tag">Mobile Responsive</span>
+                    <span class="pcard-tag">Chrome DevTools</span>
+                </div>
+               @*  <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Full Stack Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+            <div class="pcard" style="--ac:#0ea5a4;--glow:rgba(14,165,164,0.08);--shadow:rgba(14,165,164,0.18);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">02</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> MRK Infotech · Current</div>
+                <div class="pcard-icon">💻</div>
+                <h5 class="pcard-title">Laptop Service Center</h5>
+                <p class="pcard-desc">Responsive and modern frontend UI for a laptop repair and service center. Clean UX, service listing layouts and customer-facing interface flows.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">HTML5</span>
+                    <span class="pcard-tag">CSS3</span>
+                    <span class="pcard-tag">JavaScript</span>
+                    <span class="pcard-tag">Frontend Design</span>
+                    <span class="pcard-tag">Responsive UI</span>
+                </div>
+              @*   <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Frontend Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+            <div class="pcard" style="--ac:#22229b;--glow:rgba(22,163,74,0.06);--shadow:rgba(22,163,74,0.14);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">03</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> MRK Infotech · Current</div>
+                <div class="pcard-icon">🏥</div>
+                <h5 class="pcard-title">Healix — Medical Web Application</h5>
+                <p class="pcard-desc">Full-stack medical web application with integrated AI chat assistant limited to medical domain queries. Patient workflows and real-time AI communication.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">ASP.NET MVC</span>
+                    <span class="pcard-tag">Kendo UI</span>
+                    <span class="pcard-tag">SQL Server</span>
+                    <span class="pcard-tag">AI Chat</span>
+                    <span class="pcard-tag">Healthcare</span>
+                </div>
+               @*  <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Full Stack Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+            <div class="pcard" style="--ac:#f97316;--glow:rgba(249,115,22,0.08);--shadow:rgba(249,115,22,0.18);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">04</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> KST Infotech</div>
+                <div class="pcard-icon">🩺</div>
+                <h5 class="pcard-title">Calcium Healthcare API</h5>
+                <p class="pcard-desc">RESTful API for patient health tracking, appointment booking and real-time doctor-patient communication. EF Core, Azure DevOps CI/CD and Swagger.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">ASP.NET Core API</span>
+                    <span class="pcard-tag">Entity Framework</span>
+                    <span class="pcard-tag">Azure DevOps</span>
+                    <span class="pcard-tag">JWT</span>
+                </div>
+               @*  <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Backend Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+            <div class="pcard" style="--ac:#eab308;--glow:rgba(234,179,8,0.08);--shadow:rgba(234,179,8,0.18);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">05</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> KST Infotech</div>
+                <div class="pcard-icon">🛒</div>
+                <h5 class="pcard-title">Tamil Nadu Police Canteen (TNPC)</h5>
+                <p class="pcard-desc">Inventory and sales management system for Tamil Nadu Police Canteen. Product tracking, stock management and reporting for improved efficiency.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">ASP.NET Core MVC</span>
+                    <span class="pcard-tag">SQL Server</span>
+                    <span class="pcard-tag">Inventory</span>
+                    <span class="pcard-tag">Sales Module</span>
+                </div>
+               @*  <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Full Stack Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+            <div class="pcard" style="--ac:#6366f1;--glow:rgba(99,102,241,0.08);--shadow:rgba(99,102,241,0.18);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">06</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> KST Infotech</div>
+                <div class="pcard-icon">🧾</div>
+                <h5 class="pcard-title">Accounting Billing Software</h5>
+                <p class="pcard-desc">Billing and invoicing modules with integrated Web APIs and SQL database schema to handle financial transactions and reporting.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">ASP.NET Core MVC</span>
+                    <span class="pcard-tag">Web API</span>
+                    <span class="pcard-tag">SQL Server</span>
+                    <span class="pcard-tag">Billing</span>
+                </div>
+              @*   <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Full Stack Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+            <div class="pcard" style="--ac:#06b6d4;--glow:rgba(6,182,212,0.08);--shadow:rgba(6,182,212,0.18);">
+                <div class="pcard-stripe"></div>
+                <span class="pcard-num">07</span>
+                <div class="pcard-badge"><span class="pcard-pulse"></span> Supernova Instruments</div>
+                <div class="pcard-icon">🖨️</div>
+                <h5 class="pcard-title">Billing Software</h5>
+                <p class="pcard-desc">Complete billing solution with frontend design, backend logic and SQL database for invoice generation and transaction management.</p>
+                <div class="pcard-tags">
+                    <span class="pcard-tag">ASP.NET WebForm</span>
+                    <span class="pcard-tag">SQL Server</span>
+                    <span class="pcard-tag">Invoice Generation</span>
+                </div>
+              @*   <div class="pcard-footer">
+                    <div class="pcard-role"><div class="pcard-roledot"></div> Full Stack Developer</div>
+                    <div class="pcard-arrow">↗</div>
+                </div> *@
+            </div>
+
+        </div>
+
+        <button class="proj-nav-btn proj-nav-prev" id="projPrev">&#8592;</button>
+        <button class="proj-nav-btn proj-nav-next" id="projNext">&#8594;</button>
+    </div>
+
+    <div class="proj-dots-wrap" id="projDots"></div>
+</section>
+
+<section id="contact" class="py-5 contact-section">
+    
+    <div class="container">
+        <h2 class="fw-bold mb-3 text-center">Get in Touch</h2>
+
+        <div class="row align-items-center">
+
+            <!-- LEFT: IMAGE -->
+            <div class="col-md-6 text-center mb-4 contact-img">
+                <img src="~/images/contact.png" class="img-fluid" alt="contact">
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div class="col-md-6 contact-form-box">
+
+                @if (ViewBag.Success != null)
+                {
+                    <div class="alert alert-success">@ViewBag.Success</div>
+                }
+
+                <form asp-action="SendMessage" method="post" asp-fragment="contact">
+                    <input asp-for="Name" class="form-control mb-3" placeholder="Your Name" required />
+                    <input asp-for="Email" class="form-control mb-3" placeholder="Your Email" required />
+                    <textarea asp-for="Message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+
+                    <button id="sendBtn" class="btn btn-primary w-100">
+                        Send Message
+                    </button>
+
+                    <div id="contactLoader" style="display:none; text-align:center; margin-top:10px;">
+                        <div class="loader-container">
+                            <ul class="loader-box">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- EXTRA INFO -->
+                <div class="row mt-3">
+
+                    <!-- PHONE -->
+                    <div class="col-md-6 d-flex align-items-start">
+                        <span class="contact-info__icon me-3">
+                            <i class="bi bi-telephone-fill"></i>
+                        </span>
+                        <div>
+                            <h6 class="mb-1">+91 97860 86752</h6>
+                            <p class="mb-0 text-muted">Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="col-md-6 d-flex align-items-start">
+                        <span class="contact-info__icon me-3">
+                            <i class="bi bi-envelope-fill"></i>
+                        </span>
+                        <div>
+                            <h6 class="mb-1">kowsisyam@gmail.com</h6>
+                            <p class="mb-0 text-muted">Send me your query anytime!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="back-top">
+    <a href="#" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
