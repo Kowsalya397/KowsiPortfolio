@@ -472,11 +472,19 @@ color: #ffffff !important;
     border: none;
 
 }
-a[b-cwauurxe5n] {
+.footer-link {
     color: #F8FAFC;
+    text-decoration: none;
 }
+
 .btn-primary:hover {
     background: #0000cc;
+}
+.footer-link:hover {
+    color: #38bdf8;
+}
+.footer-link {
+    color: #F8FAFC !important;
 }
 
 .btn-light {
@@ -775,14 +783,14 @@ footer {
 .exp-role {
     text-align: center;
     font-size: 14px;
-    color: #4f46e5;
+    color: #545358 !important;
     margin-bottom: 15px;
 }
 
 /* LIST - HIDE BY DEFAULT */
 .exp-list {
     list-style: none;
-    padding-left: 0;
+    padding-left: 20px;
     margin-top: 0;
     max-height: 0;
     opacity: 0;
@@ -795,12 +803,12 @@ footer {
         font-size: 14px;
         color: #4b5563;
         margin-bottom: 8px;
-        padding-left: 22px;
+        padding-left: 20px;
     }
 
         /* >> bullet */
         .exp-list li::before {
-            content: ">>";
+            content: "<>";
             position: absolute;
             left: 0;
             color: #00cccc;
