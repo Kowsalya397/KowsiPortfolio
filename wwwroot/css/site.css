@@ -255,6 +255,51 @@ color: #ffffff !important;
     letter-spacing: 1px;
 }
 
+/* Floating Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.social-link {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+ 
+/* Individual Colors */
+.linkedin {
+    background: #0077b5;
+}
+ 
+.github {
+    background: #333;
+}
+ 
+.email {
+    background: #d44638;
+}
+ 
+/* Hover Animation */
+.social-link:hover {
+    width: 65px;
+    transform: translateX(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
 .circle {
     position: absolute;
     border-radius: 50%;
