@@ -521,14 +521,16 @@
                     <div class="alert alert-success">@ViewBag.Success</div>
                 }
 
-                <form asp-action="SendMessage" method="post" asp-fragment="contact">
+                <form id="contactForm" asp-action="SendMessage" method="post" asp-fragment="contact">
                     <input asp-for="Name" class="form-control mb-3" placeholder="Your Name" required />
                     <input asp-for="Email" class="form-control mb-3" placeholder="Your Email" required />
                     <textarea asp-for="Message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
 
-                    <button id="sendBtn" class="btn btn-primary w-100">
-                        Send Message
-                    </button>
+                     <button id="sendBtn" class="btn btn-primary w-100">
+                          <span id="btnText">Send Message</span>
+                          <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2"
+                                style="display:none;" role="status"></span>
+                      </button>
 
                     <div id="contactLoader" style="display:none; text-align:center; margin-top:10px;">
                         <div class="loader-container">
