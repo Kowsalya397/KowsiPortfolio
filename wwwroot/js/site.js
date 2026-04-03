@@ -212,6 +212,30 @@ window.addEventListener("load", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    const form = document.getElementById("contactForm");
+    const btn = document.getElementById("sendBtn");
+    const text = document.getElementById("btnText");
+    const spinner = document.getElementById("btnSpinner");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function () {
+
+        // Disable button
+        btn.disabled = true;
+
+        // Change text
+        text.innerText = "Sending";
+
+        // Show spinner
+        spinner.style.display = "inline-block";
+
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
     const nav = document.getElementById("nav");
     const icon = document.getElementById("menuIcon");
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
